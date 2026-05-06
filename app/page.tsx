@@ -301,7 +301,7 @@ export default function Home() {
               هدية لمعهد علوم الرياضة والنشاط البدني - صُممت بحب ❤️
             </p>
             <p className="text-sm text-muted-foreground">
-              © 2024 جميع الحقوق محفوظة
+              © 2026 جميع الحقوق محفوظة
             </p>
           </div>
         </div>
