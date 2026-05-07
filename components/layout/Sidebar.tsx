@@ -78,7 +78,7 @@ export function Sidebar() {
             <Microscope className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h1 className="font-bold text-foreground">Nadra ResearchFit</h1>
+            <h1 className="font-bold text-foreground">Nadra researchlab</h1>
             <p className="text-xs text-muted-foreground">منصة البحث الرياضي</p>
           </div>
         </Link>
