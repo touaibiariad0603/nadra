@@ -3,7 +3,7 @@ import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 
 export const metadata: Metadata = {
-  title: "Nadra ResearchFit - منصة البحث الرياضي",
+  title: " Nadra researchlab- منصة البحث الرياضي",
   description: "منصة أكاديمية شاملة لإدارة الدراسات والبحوث في معهد علوم الرياضة والنشاط البدني",
   keywords: ["بحث رياضي", "علوم الرياضة", "قياسات", "تحليل إحصائي"],
 };
