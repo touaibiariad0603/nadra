@@ -139,15 +139,10 @@ export default function Home() {
       />
     </div>
 
-    <h1 className="text-5xl md:text-6xl font-extrabold text-rose-700 mb-6">
-      إهداء إلى أمي وأبي
-    </h1>
+
 
     <p className="text-xl leading-10 text-gray-700 max-w-2xl mx-auto mb-10">
-      هذا التطبيق هو ثمرة الجهود العلمية والبحثية ، وهو منصة تعلمية ترافق الاساتذة والطالبات 
-      في الدراسة بالأداة الرقمية
-      Nadra Fitness مستوحى من العائلة، ومصمم لدعم البحث الأكاديمي في
-      التدريب الميداني و الافتراضي للنساء في صالة الجيم 
+      منصة تعليمية تدريبية للأساتذة والطلبة والباحثين في مختلف الدراسات بالاداة الرقمية
 
     </p>
     <Link href="/register">
@@ -294,7 +289,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-sm text-muted-foreground text-center">
-              هدية لمعهد علوم الرياضة والنشاط البدني - صُممت بحب ❤️
+            موجهة لمعهد علوم وتقنيات النشاطات البدنية والرياضية
             </p>
             <p className="text-sm text-muted-foreground">
               © 2026 جميع الحقوق محفوظة
