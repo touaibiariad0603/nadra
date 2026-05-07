@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Dumbbell } from "lucide-react";
 import { useParams } from "next/navigation";
 import ProtectedRoute from "@/components/auth/ProtectedRoute";
 import { useApp } from "@/context/AppContext";
@@ -100,6 +101,23 @@ export default function StudyDetailsPage() {
                 </CardContent>
               </Card>
             </div>
+
+            <Card className="mb-8">
+             <CardHeader>
+                 <CardTitle>البرنامج التدريبي</CardTitle>
+            </CardHeader>
+
+            <CardContent>
+                <div className="flex flex-wrap gap-4">
+                <Link href={`/studies/${study.id}/program`}>
+                <Button className="gap-2">
+                <Dumbbell className="w-4 h-4" />
+                 إدارة البرنامج التدريبي
+                </Button>
+             </Link>
+            </div>
+            </CardContent>
+            </Card>
 
             <Card>
               <CardHeader>

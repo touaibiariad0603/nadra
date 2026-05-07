@@ -143,7 +143,7 @@ case "hipCircumference":
   baseValue = 85 + Math.random() * 15;
   variation = (Math.random() - 0.5) * 3;
   improvement = -(0.5 + Math.random() * 3);
-  break;  
+  break;    
       default:
         baseValue = 50;
         variation = 5;

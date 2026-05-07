@@ -39,6 +39,7 @@ export interface Study {
   status: 'planning' | 'pre-test' | 'intervention' | 'post-test' | 'analysis' | 'completed';
   variables: StudyVariable[];
   participants: Participant[];
+  trainingProgram?: TrainingProgram;
 }
 
 export interface StatisticalResult {
@@ -84,3 +85,24 @@ export interface TeacherNote {
 export type StudyStatus = Study['status'];
 export type StudyType = Study['studyType'];
 export type UserRole = User['role'];
+
+export interface TrainingUnit {
+  id: string;
+  title: string;
+  description: string;
+  duration: string;
+  intensity: string;
+  exercises: string;
+  notes?: string;
+  fileUrl?: string;
+}
+
+export interface TrainingProgram {
+  id: string;
+  title: string;
+  durationWeeks: number;
+  sessionsPerWeek: number;
+  objective: string;
+  notes?: string;
+  units: TrainingUnit[];
+}
