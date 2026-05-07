@@ -112,7 +112,7 @@ export default function Home() {
               <Microscope className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Nadra ResearchFit</h1>
+              <h1 className="text-xl font-bold text-foreground">Nadra researchlab</h1>
               <p className="text-xs text-muted-foreground">منصة البحث الرياضي</p>
             </div>
           </div>
@@ -128,39 +128,35 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 text-center">
-        <div className="max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
-            <GraduationCap className="w-4 h-4" />
-            <span className="text-sm font-medium">هدية لمعهد علوم الرياضة والنشاط البدني</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-            من القياس إلى المناقشة...
-            <br />
-            <span className="text-primary">بحثك الرياضي منظّم علمياً</span>
-          </h2>
-          
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            منصة أكاديمية شاملة تساعد الطلاب والباحثين على إدارة الدراسات الميدانية 
-            baseada على قياسات قبلية وبعدية، مع تحليل إحصائي تلقائي وتفسير علمي جاهز.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/register">
-              <Button size="lg" className="text-lg px-8 py-6">
-                ابدأ البحث الآن
-                <ArrowLeft className="w-5 h-5 mr-2" />
-              </Button>
-            </Link>
-            <Link href="#features">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                اكتشف الميزات
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-rose-50 px-6">
+  <div className="max-w-3xl mx-auto text-center" dir="rtl">
+    
+    <div className="flex justify-center mb-8">
+      <img
+        src="/nadra-logo.png"
+        alt="Nadra Fitness"
+        className="w-56 h-56 object-contain rounded-full shadow-lg"
+      />
+    </div>
+
+    <h1 className="text-5xl md:text-6xl font-extrabold text-rose-700 mb-6">
+      إهداء إلى أمي وأبي
+    </h1>
+
+    <p className="text-xl leading-10 text-gray-700 max-w-2xl mx-auto mb-10">
+      هذا التطبيق هو ثمرة الجهود العلمية والبحثية ، وهو منصة تعلمية ترافق الاساتذة والطالبات 
+      في الدراسة بالأدلة الرقمية
+      Nadra Fitness مستوحى من العائلة، ومصمم لدعم البحث الأكاديمي في
+      التدريب الميداني و الافتراضي للنساء في صالة الجيم 
+
+    </p>
+    <Link href="/register">
+      <button className="bg-rose-600 hover:bg-rose-700 transition text-white px-10 py-4 rounded-full text-lg font-semibold shadow-lg">
+        ابدأ الآن
+      </button>
+    </Link>
+  </div>
+</section>
 
       {/* Stats Section */}
       <section className="container mx-auto px-4 py-16">
@@ -271,7 +267,7 @@ export default function Home() {
           <CardContent className="p-12">
             <h3 className="text-3xl font-bold mb-4">جاهز لبدء بحثك الرياضي؟</h3>
             <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-              انضم إلى الباحثين الذين يستخدمون منصة Nadra ResearchFit 
+              انضم إلى الباحثين الذين يستخدمون منصة Nadra researchlab
               لتنظيم وتحليل دراساتهم الميدانية بشكل احترافي
             </p>
            <Link href="/register">
@@ -293,7 +289,7 @@ export default function Home() {
                 <Microscope className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h4 className="font-bold text-foreground">Nadra ResearchFit</h4>
+                <h4 className="font-bold text-foreground">Nadra researchlab</h4>
                 <p className="text-xs text-muted-foreground">منصة البحث الرياضي الأكاديمي</p>
               </div>
             </div>
