@@ -4,39 +4,74 @@ import { generateId } from './utils';
 // Default study variables for sports science
 export const defaultVariables: StudyVariable[] = [
   {
-    id: 'var-speed',
-    name: 'speed',
-    nameAr: 'السرعة',
-    unit: 'ثانية',
-    description: 'اختبار السرعة 50 متر',
+    id: "var-speed",
+    name: "speed",
+    nameAr: "السرعة",
+    unit: "ثانية",
+    description: "اختبار السرعة 50 متر",
   },
   {
-    id: 'var-strength',
-    name: 'strength',
-    nameAr: 'القوة',
-    unit: 'عدد التكرارات',
-    description: 'اختبار قوة العضلات',
+    id: "var-strength",
+    name: "strength",
+    nameAr: "القوة",
+    unit: "عدد التكرارات",
+    description: "اختبار قوة العضلات",
   },
   {
-    id: 'var-endurance',
-    name: 'endurance',
-    nameAr: 'التحمل',
-    unit: 'دقيقة',
-    description: 'اختبار التحمل القلبي التنفسي',
+    id: "var-endurance",
+    name: "endurance",
+    nameAr: "التحمل",
+    unit: "دقيقة",
+    description: "اختبار التحمل القلبي التنفسي",
   },
   {
-    id: 'var-flexibility',
-    name: 'flexibility',
-    nameAr: 'المرونة',
-    unit: 'سم',
-    description: 'اختبار الجلوس ومد الذراعين',
+    id: "var-flexibility",
+    name: "flexibility",
+    nameAr: "المرونة",
+    unit: "سم",
+    description: "اختبار الجلوس ومد الذراعين",
   },
   {
-    id: 'var-bmi',
-    name: 'bmi',
-    nameAr: 'مؤشر كتلة الجسم',
-    unit: 'كغ/م²',
-    description: 'مؤشر كتلة الجسم',
+    id: "var-balance",
+    name: "balance",
+    nameAr: "التوازن",
+    unit: "ثانية",
+    description: "اختبار التوازن",
+  },
+  {
+    id: "var-bmi",
+    name: "bmi",
+    nameAr: "مؤشر كتلة الجسم",
+    unit: "كغ/م²",
+    description: "مؤشر كتلة الجسم",
+  },
+  {
+    id: "var-arm-circumference",
+    name: "armCircumference",
+    nameAr: "محيط الذراع",
+    unit: "سم",
+    description: "قياس محيط الذراع قبل وبعد البرنامج",
+  },
+  {
+    id: "var-thigh-circumference",
+    name: "thighCircumference",
+    nameAr: "محيط الفخذ",
+    unit: "سم",
+    description: "قياس محيط الفخذ قبل وبعد البرنامج",
+  },
+  {
+    id: "var-waist-circumference",
+    name: "waistCircumference",
+    nameAr: "محيط الخصر",
+    unit: "سم",
+    description: "قياس محيط الخصر قبل وبعد البرنامج",
+  },
+  {
+    id: "var-hip-circumference",
+    name: "hipCircumference",
+    nameAr: "محيط الورك",
+    unit: "سم",
+    description: "قياس محيط الورك قبل وبعد البرنامج",
   },
 ];
 
@@ -80,6 +115,35 @@ function generateParticipant(variables: StudyVariable[], index: number): Partici
         variation = (Math.random() - 0.5) * 1;
         improvement = (Math.random() - 0.5) * 1.5; // Can go either way
         break;
+      case "balance":
+  baseValue = 20 + Math.random() * 20;
+  variation = (Math.random() - 0.5) * 4;
+  improvement = 2 + Math.random() * 8;
+  break;
+
+case "armCircumference":
+  baseValue = 25 + Math.random() * 8;
+  variation = (Math.random() - 0.5) * 2;
+  improvement = 0.5 + Math.random() * 2;
+  break;
+
+case "thighCircumference":
+  baseValue = 45 + Math.random() * 10;
+  variation = (Math.random() - 0.5) * 2;
+  improvement = 0.5 + Math.random() * 2.5;
+  break;
+
+case "waistCircumference":
+  baseValue = 70 + Math.random() * 15;
+  variation = (Math.random() - 0.5) * 3;
+  improvement = -(1 + Math.random() * 4);
+  break;
+
+case "hipCircumference":
+  baseValue = 85 + Math.random() * 15;
+  variation = (Math.random() - 0.5) * 3;
+  improvement = -(0.5 + Math.random() * 3);
+  break;  
       default:
         baseValue = 50;
         variation = 5;
