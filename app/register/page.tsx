@@ -91,7 +91,6 @@ export default function RegisterPage() {
               >
                 <option value="researcher">طالب / أستاذ / باحث</option>
                 <option value="participant">مشارك</option>
-                <option value="admin">أدمن</option>
               </select>
             </div>
 

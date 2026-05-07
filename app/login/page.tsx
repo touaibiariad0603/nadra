@@ -83,11 +83,6 @@ export default function LoginPage() {
               </Link>
             </div>
 
-            <div className="border-t pt-4 text-xs text-muted-foreground space-y-1">
-              <p>Admin: admin@nadra.app / admin123</p>
-              <p>Researcher: researcher@nadra.app / researcher123</p>
-              <p>Participant: participant@nadra.app / participant123</p>
-            </div>
           </form>
         </CardContent>
       </Card>
